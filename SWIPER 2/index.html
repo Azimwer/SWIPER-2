@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Swiper Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <!-- Slider main container -->
+    <div class="swiper w-2/3 h-[500px] bg-base-300 rounded-[40px] shadow-lg shadow-emerald-400">
+        <!-- Wrapper for slides -->
+        <div class="swiper-wrapper" id="swiper-content">
+            <!-- Лоадер в отдельном слайде -->
+            <div class="swiper-slide flex items-center justify-center" id="loader-slide">
+                <div class="loading loading-spinner loading-lg"></div>
+            </div>
+        </div>
+
+        <!-- Pagination controls -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="./main.js"></script>
+    <script src="./swiper.js"></script>
+</body>
+
+</html>
